@@ -72,7 +72,7 @@
             </h1>
             <div id="connection-indicator" class="text-xs bg-slate-800 px-3 py-1 rounded-full border border-slate-700 text-emerald-400">
                 <i class="fas fa-circle-notch fa-spin mr-1"></i> 
-                雲端連動中 <span class="ml-1 opacity-60">Cloud Sync Syncing</span>
+                雲端連動中 <span class="ml-1 opacity-60">Cloud Sync Success</span>
             </div>
         </div>
     </nav>
@@ -127,7 +127,6 @@
                         </tr>
                     </thead>
                     <tbody class="divide-y divide-slate-100">
-                        <!-- 北排灣語考生 -->
                         <tr class="hover:bg-emerald-50/50 transition-colors">
                             <td class="px-6 py-4 font-mono font-bold text-emerald-800 text-lg">12</td>
                             <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">呂頌恩</td>
@@ -135,7 +134,6 @@
                             <td class="px-6 py-4"><span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold ring-1 ring-amber-200">中高級 / High-Int.</span></td>
                             <td class="px-6 py-4 text-sm font-medium text-slate-500">16:13 - 16:24</td>
                         </tr>
-                        <!-- 中排灣語考生 -->
                         <tr class="hover:bg-emerald-50/50 transition-colors">
                             <td class="px-6 py-4 font-mono font-bold text-emerald-800 text-lg">13</td>
                             <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">楊舒閑</td>
@@ -185,7 +183,6 @@
                 themeColor: "emerald"
             },
             central: {
-                // 更新中排灣語資料 (楊舒閑同學)
                 title: "中排灣語 / 第10階第5課 malang 手工製作",
                 audio: "https://res.cloudinary.com/dm1ksvptk/video/upload/v1766046642/%E4%B8%AD%E6%8E%92%E7%81%A3%E8%AA%9E_10%E9%9A%8E-5-1-2_ofqpzc.mp3", 
                 text: "aicu a malang tua tja pakazuanan, izua lingadja, izua qavaqavayan, izua lidapay, izua lulu/capar, izua kizing, izua langalj izua valanga, izua qaselu, izua varukur. aicu a tja pakazuanan a inalang tja sipiliq tua nasedaljep a kasiv, nu ika maudemid nu ika mincelaq, nu ika maparaumalj a kinakasivan, vana maqati a tja alangen.",
@@ -235,13 +232,13 @@
                         </div>
                     </div>
 
-                    <!-- Task 2: 看圖說故事考題 -->
+                    <!-- Task 2: 看圖說故事考題 (已修正標題) -->
                     <div class="bg-white p-3 rounded-3xl shadow-lg overflow-hidden border border-slate-200 ring-1 ring-${data.themeColor}-100">
                         <div class="px-5 py-4 border-b flex items-center justify-between bg-slate-50">
                             <span class="flex items-center gap-2">
                                 <i class="fas fa-comment-dots text-${data.themeColor}-600 text-xl"></i> 
                                 <div>
-                                    <h4 class="font-bold text-slate-800">朗讀說故事考題</h4>
+                                    <h4 class="font-bold text-slate-800">看圖說故事考題</h4>
                                     <span class="text-[10px] font-normal text-slate-500 block uppercase tracking-tighter italic">Storytelling Task</span>
                                 </div>
                             </span>
@@ -308,5 +305,4 @@
         });
     </script>
 </body>
-
 </html>
