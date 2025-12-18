@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1219 期中報告 Midterm Presentation List - 排灣語</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+        body { 
+            background-color: #f1f5f9; 
+            font-family: 'Noto Sans TC', sans-serif; 
+        }
+        .paiwan-text {
+            line-height: 2.2;
+            letter-spacing: 0.03em;
+        }
+        .student-table th {
+            background-color: #064e3b;
+            color: #f1f5f9;
+            font-weight: 600;
+        }
+        .page-title-gradient {
+            background: linear-gradient(135deg, #064e3b 0%, #059669 100%);
+        }
+        .bilingual-sub {
+            display: block;
+            font-size: 0.75rem;
+            font-weight: normal;
+            opacity: 0.8;
+            margin-top: 1px;
+        }
+        .editable-name {
+            cursor: text;
+            transition: all 0.2s;
+        }
+        .editable-name:hover {
+            background-color: #ecfdf5;
+        }
+        .editable-name:focus {
+            background-color: #fff;
+            outline: 2px solid #059669;
+            box-shadow: 0 0 10px rgba(5, 150, 105, 0.2);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+        .tab-active {
+            border-bottom: 4px solid #059669;
+            color: #064e3b;
+            background-color: #ecfdf5;
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.4s ease-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-12">
+    <!-- 頂部導覽 -->
+    <nav class="bg-slate-900 text-white p-4 shadow-lg mb-0">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold flex items-center gap-2">
+                <i class="fas fa-university text-emerald-400"></i> 
+                <div>
+                    族語能力認證學習系統
+                    <span class="bilingual-sub">Indigenous Language Certification System</span>
+                </div>
+            </h1>
+            <div id="connection-indicator" class="text-xs bg-slate-800 px-3 py-1 rounded-full border border-slate-700 text-emerald-400">
+                <i class="fas fa-circle-notch fa-spin mr-1"></i> 
+                雲端連動中 <span class="ml-1 opacity-60">Cloud Sync Syncing</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 專屬標題區 -->
+    <div class="page-title-gradient text-white py-10 px-4 mb-8 shadow-inner border-b-4 border-emerald-900">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
+                1219 期中報告
+            </h2>
+            <p class="text-xl md:text-2xl font-light text-emerald-50 italic">
+                Midterm Presentation List
+            </p>
+            <div class="mt-6 flex flex-wrap justify-center gap-4">
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-xl text-sm border border-white/30 flex flex-col items-center">
+                    <span class="font-bold">2025年 12月 19日</span>
+                    <span class="text-[10px] opacity-80 uppercase tracking-widest text-white">December 19, 2025</span>
+                </span>
+                <span class="bg-white/20 backdrop-blur-md px-4 py-2 rounded-xl text-sm border border-white/30 flex flex-col items-center text-center">
+                    <span class="font-bold">幼教系-族語3-語文教室 (排灣語組)</span>
+                    <span class="text-[10px] opacity-80 uppercase tracking-widest text-white">Dept. of ECE - Language Lab (Paiwan)</span>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <main class="max-w-6xl mx-auto px-4">
+        
+        <!-- 考生名單區塊 -->
+        <div class="bg-white rounded-2xl shadow-xl border border-slate-200 mb-10 overflow-hidden">
+            <div class="bg-slate-50 px-6 py-4 border-b border-slate-200 flex justify-between items-center">
+                <h3 class="font-bold text-slate-800 flex items-center gap-2 text-lg">
+                    <i class="fas fa-list-ol text-emerald-700"></i> 
+                    <div>
+                        排灣語報告名單
+                        <span class="text-xs font-normal text-slate-500 block uppercase tracking-tight">Paiwan Presentation List</span>
+                    </div>
+                </h3>
+                <span class="text-[10px] text-emerald-600 bg-white px-2 py-1 rounded border border-emerald-100 font-bold">
+                    <i class="fas fa-edit mr-1"></i> 姓名點擊可修改 / Names are Editable
+                </span>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left student-table">
+                    <thead>
+                        <tr>
+                            <th class="px-6 py-4 text-sm">序號 <span class="bilingual-sub">ID</span></th>
+                            <th class="px-6 py-4 text-sm">姓名 (可修改) <span class="bilingual-sub">Name (Editable)</span></th>
+                            <th class="px-6 py-4 text-sm">族語分組 <span class="bilingual-sub">Group</span></th>
+                            <th class="px-6 py-4 text-sm">考生級別 <span class="bilingual-sub">Level</span></th>
+                            <th class="px-6 py-4 text-sm">測驗時段 <span class="bilingual-sub">Schedule</span></th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-100">
+                        <!-- 北排灣語考生 -->
+                        <tr class="hover:bg-emerald-50/50 transition-colors">
+                            <td class="px-6 py-4 font-mono font-bold text-emerald-800 text-lg">12</td>
+                            <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">呂頌恩</td>
+                            <td class="px-6 py-4 text-slate-600">北排灣 <span class="text-[10px] text-slate-400 block tracking-tighter italic">N. Paiwan</span></td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold ring-1 ring-amber-200">中高級 / High-Int.</span></td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-500">16:13 - 16:24</td>
+                        </tr>
+                        <!-- 中排灣語考生 -->
+                        <tr class="hover:bg-emerald-50/50 transition-colors">
+                            <td class="px-6 py-4 font-mono font-bold text-emerald-800 text-lg">13</td>
+                            <td class="px-6 py-4 font-bold text-slate-800 editable-name" contenteditable="true">楊舒閑</td>
+                            <td class="px-6 py-4 text-slate-600">中排灣語 <span class="text-[10px] text-slate-400 block tracking-tighter italic">C. Paiwan</span></td>
+                            <td class="px-6 py-4"><span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-bold ring-1 ring-amber-200">中高級 / High-Int.</span></td>
+                            <td class="px-6 py-4 text-sm font-medium text-slate-500">16:24 - 16:35</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 考題級別/語別切換 -->
+        <div class="flex border-b border-slate-200 mb-8 bg-white rounded-t-xl overflow-hidden shadow-sm">
+            <button onclick="window.switchLevel('north')" id="tab-north" class="flex-1 py-4 font-bold text-lg transition-all tab-active">
+                北排灣語 (N. Paiwan)
+                <span class="block text-xs font-normal opacity-70">適用考生：呂頌恩</span>
+            </button>
+            <button onclick="window.switchLevel('central')" id="tab-central" class="flex-1 py-4 font-bold text-lg transition-all text-slate-400 hover:text-slate-600 bg-slate-50">
+                中排灣語 (C. Paiwan)
+                <span class="block text-xs font-normal opacity-70">適用考生：楊舒閑</span>
+            </button>
+        </div>
+
+        <div id="exam-content" class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <!-- 內容將由 JS 動態填充 -->
+        </div>
+    </main>
+
+    <footer class="mt-16 text-center text-slate-400 text-sm py-8 border-t border-slate-200">
+        <p>排灣語 | 1219 認證評量輔助系統</p>
+        <p class="mt-1 italic uppercase tracking-widest text-[10px]">© 2025 Midterm Evaluation Management System (Paiwan)</p>
+    </footer>
+
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+
+        // 排灣語考題資料庫
+        const examData = {
+            north: {
+                title: "北排灣語 / 第10階第5 課文 :marekaracev 部落產業",
+                audio: "https://res.cloudinary.com/dm1ksvptk/video/upload/v1766045878/%E5%8C%97%E6%8E%92%E7%81%A3%E8%AA%9E_10%E9%9A%8E-5-1_edrv7b.mp3", 
+                text: "kemasicuay, remagaduan a ’emuma a venacuk a sinanpazangal, palemek a ’emaljup, tjempis tua ljaceng katua sikidjuadjuas a cemel. amin a temalem ta va’u, vasa, tjalav, puk, vurati, djulis sakamaya. tazua nekanan a tja pavaveliveli a sikudan, nu izua a tja nemanema, tja sikivalivalit tua tja kinasaljingan.",
+                task1: "https://res.cloudinary.com/dm1ksvptk/image/upload/v1766045889/%E5%8C%97%E6%8E%92%E7%81%A3%E8%AA%9E10%E9%9A%8E-5-1_nqaaur.png",
+                task2: "https://res.cloudinary.com/dm1ksvptk/image/upload/v1765943677/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2_2025-12-17_114733_bbhw4r.png",
+                themeColor: "emerald"
+            },
+            central: {
+                // 更新中排灣語資料 (楊舒閑同學)
+                title: "中排灣語 / 第10階第5課 malang 手工製作",
+                audio: "https://res.cloudinary.com/dm1ksvptk/video/upload/v1766046642/%E4%B8%AD%E6%8E%92%E7%81%A3%E8%AA%9E_10%E9%9A%8E-5-1-2_ofqpzc.mp3", 
+                text: "aicu a malang tua tja pakazuanan, izua lingadja, izua qavaqavayan, izua lidapay, izua lulu/capar, izua kizing, izua langalj izua valanga, izua qaselu, izua varukur. aicu a tja pakazuanan a inalang tja sipiliq tua nasedaljep a kasiv, nu ika maudemid nu ika mincelaq, nu ika maparaumalj a kinakasivan, vana maqati a tja alangen.",
+                task1: "https://res.cloudinary.com/dm1ksvptk/image/upload/v1766046795/%E4%B8%AD%E6%8E%92%E7%81%A310-5-1_rdae5v.png",
+                task2: "https://res.cloudinary.com/dm1ksvptk/image/upload/v1765943677/%E8%9E%A2%E5%B9%95%E6%93%B7%E5%8F%96%E7%95%AB%E9%9D%A2_2025-12-17_114733_bbhw4r.png",
+                themeColor: "emerald"
+            }
+        };
+
+        /**
+         * 切換考題級別/方言
+         */
+        window.switchLevel = function(level) {
+            const data = examData[level];
+            const content = document.getElementById('exam-content');
+            if (!content) return;
+
+            // 切換按鈕樣式
+            ['north', 'central'].forEach(l => {
+                const btn = document.getElementById(`tab-${l}`);
+                if (btn) {
+                    if (l === level) {
+                        btn.className = "flex-1 py-4 font-bold text-lg transition-all tab-active";
+                    } else {
+                        btn.className = "flex-1 py-4 font-bold text-lg transition-all text-slate-400 hover:text-slate-600 bg-slate-50";
+                    }
+                }
+            });
+
+            // 渲染內容
+            content.innerHTML = `
+                <div class="space-y-8 animate-fadeIn">
+                    <!-- Task 1: 朗讀考題 -->
+                    <div class="bg-white p-3 rounded-3xl shadow-lg overflow-hidden border border-slate-200 ring-1 ring-${data.themeColor}-100">
+                        <div class="px-5 py-4 border-b flex items-center justify-between bg-${data.themeColor}-50/50">
+                            <span class="flex items-center gap-2">
+                                <i class="fas fa-file-alt text-${data.themeColor}-600 text-xl"></i> 
+                                <div>
+                                    <h4 class="font-bold text-slate-800">朗讀考題</h4>
+                                    <span class="text-[10px] font-normal text-slate-500 block uppercase tracking-tighter italic">Reading Task</span>
+                                </div>
+                            </span>
+                            <span class="text-[11px] font-bold text-${data.themeColor}-600 bg-white px-2 py-0.5 rounded border border-${data.themeColor}-200">TASK 1</span>
+                        </div>
+                        <div class="p-2 bg-slate-50">
+                             <img src="${data.task1}" alt="Reading Exam" class="w-full h-auto object-contain rounded-xl shadow-inner" onerror="this.src='https://placehold.co/600x400?text=Image+Not+Found'">
+                        </div>
+                    </div>
+
+                    <!-- Task 2: 朗讀說故事考題 -->
+                    <div class="bg-white p-3 rounded-3xl shadow-lg overflow-hidden border border-slate-200 ring-1 ring-${data.themeColor}-100">
+                        <div class="px-5 py-4 border-b flex items-center justify-between bg-slate-50">
+                            <span class="flex items-center gap-2">
+                                <i class="fas fa-comment-dots text-${data.themeColor}-600 text-xl"></i> 
+                                <div>
+                                    <h4 class="font-bold text-slate-800">朗讀說故事考題</h4>
+                                    <span class="text-[10px] font-normal text-slate-500 block uppercase tracking-tighter italic">Storytelling Task</span>
+                                </div>
+                            </span>
+                            <span class="text-[11px] font-bold text-${data.themeColor}-600 bg-white px-2 py-0.5 rounded border border-${data.themeColor}-200 uppercase">TASK 2</span>
+                        </div>
+                        <div class="p-2 bg-slate-50">
+                            <img src="${data.task2}" alt="Speaking Exam" class="w-full h-auto object-contain rounded-xl shadow-inner" onerror="this.src='https://placehold.co/600x400?text=Image+Not+Found'">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="space-y-8 animate-fadeIn">
+                    <!-- 播放器 -->
+                    <div class="bg-emerald-900 p-8 rounded-[2rem] shadow-2xl text-white ring-4 ring-emerald-800/20">
+                        <div class="flex justify-between items-center mb-6">
+                            <h3 class="text-xl font-bold flex items-center gap-3">
+                                <i class="fas fa-headphones-alt text-emerald-400"></i> 
+                                <div>參考音訊播放 <span class="text-[10px] font-normal text-emerald-300 block uppercase tracking-widest">Reference Audio Playback</span></div>
+                            </h3>
+                        </div>
+                        ${data.audio ? `<audio controls class="w-full h-12 shadow-inner rounded-lg"><source src="${data.audio}" type="audio/mpeg"></audio>` : `<div class="p-4 bg-emerald-800 rounded-xl text-emerald-200 text-center italic border border-dashed border-emerald-700 text-sm">目前尚無音訊內容 / No Audio Available</div>`}
+                    </div>
+
+                    <!-- 讀稿內容文字 -->
+                    <div class="bg-white p-10 rounded-[2rem] shadow-xl border border-slate-100 relative overflow-hidden ring-1 ring-slate-200">
+                        <div class="absolute top-0 right-0 w-24 h-24 bg-emerald-500/5 -mr-10 -mt-10 rounded-full"></div>
+                        <h3 class="text-2xl font-bold text-slate-800 mb-6 border-l-4 border-emerald-500 pl-4">朗讀內容文字 <span class="text-xs font-normal text-slate-500 block uppercase tracking-wider italic">Reading Text Content</span></h3>
+                        <div class="mb-4 text-emerald-700 font-bold bg-emerald-50 px-4 py-2 rounded-lg inline-block text-sm border border-emerald-100">${data.title}</div>
+                        <div class="paiwan-text text-2xl md:text-3xl text-slate-700 italic font-medium leading-relaxed bg-slate-50/80 p-8 rounded-2xl border border-dashed border-slate-300 shadow-inner">"${data.text}"</div>
+                    </div>
+                </div>
+            `;
+        };
+
+        async function initFirebase() {
+            try {
+                const configStr = typeof __firebase_config !== 'undefined' ? __firebase_config : null;
+                if (!configStr) return;
+                
+                const firebaseConfig = JSON.parse(configStr);
+                const app = initializeApp(firebaseConfig);
+                const auth = getAuth(app);
+                
+                const token = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+                if (token) {
+                    await signInWithCustomToken(auth, token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+
+                onAuthStateChanged(auth, (user) => {
+                    const ind = document.getElementById('connection-indicator');
+                    if (user && ind) {
+                        ind.innerHTML = `<i class="fas fa-check-circle text-emerald-400 mr-1"></i> 雲端連動成功 <span class="ml-1 opacity-60">Cloud Sync Success</span>`;
+                    }
+                });
+            } catch (err) {}
+        }
+
+        // 初始化視圖
+        window.addEventListener('DOMContentLoaded', () => {
+            window.switchLevel('north');
+            initFirebase();
+        });
+    </script>
+</body>
+</html>
